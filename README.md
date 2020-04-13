@@ -9,5 +9,6 @@ A resulting table displays number of votes (0 and 1 votes together) grouped by i
 
 ## Back-end: 
 
-Listens 5000 port;
+Listens 5000 port
+
 /votes endpoint returns the first page with 1500 votes from cats api.
