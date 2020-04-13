@@ -5,13 +5,12 @@ const {URL, URLSearchParams} = require('url');
 
 const api = express();
 
-const port = 5000
-const api_key = process.env.API_KEY;
+const port = 5000;
+const api_key = process.env.API_KEY || "DEMO-API-KEY";
 
 const options = {
   method: 'GET',
   headers: {'x-api-key' : api_key}
-
 }
 
 api.get('/votes', async (request, response) => {
