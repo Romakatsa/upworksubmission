@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+}
+
+.TableRowCell {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.TableRow {
+  background-color: rgb(198, 236, 198);
+  border-top: 1px solid lightgray;
+}

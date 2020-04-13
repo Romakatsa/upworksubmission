@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: getscats
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: getscats
+  template:
+    metadata:
+      labels:
+        app: getscats
+    spec:
+      containers:
+        - name: getscats
+          imagePullPolicy: Never
+          image: romakatsa/getscats:latest
+          ports:
+          - containerPort: 5000
+            protocol: TCP
+          env:
+          - name: "API_KEY"
+            value: "DEMO-API-KEY"
+            
+
+
